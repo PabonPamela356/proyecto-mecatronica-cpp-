@@ -1,1 +1,17 @@
+CREATE DATABASE nexus_academy;
+USE nexus_academy;
 
+CREATE TABLE alumnos (
+    id INT PRIMARY KEY,
+    nombre VARCHAR(50),
+    apellido VARCHAR(50),
+    celular VARCHAR(20),
+    nota_final DECIMAL(4,2)
+);
+
+INSERT INTO alumnos VALUES
+(1,'Ana','Perez','77711111',4.5),
+(2,'Luis','Gomez','77722222',3.2),
+(3,'Maria','Lopez','77733333',5.0),
+(4,'Carlos','Rojas','77744444',2.8),
+(5,'Sofia','Diaz','77755555',4.9);
